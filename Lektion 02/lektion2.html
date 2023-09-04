@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Start av html-dokumentet -->
+<!-- Du kan skapa kommentarer i HTML genom att använda dessa taggar -->
+<!-- En kommentar
+    kan täcka flera rader. Och 
+        måste avslutas -->
+<!-- 
+    En kommentar renderas inte av webbläsaren 
+    men besökaren av sidan kan se den genom att
+    titta på webbsidans källa.
+-->  
+<head> <!-- Start av head-taggen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lektion 2 - Grunderna i HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*
+            Här kan jag skriva CSS-kod. I CSS ser kommentarerna
+            ut på ett annat sätt än vad dem gör i HTML. 
+        */
+    </style>
+    <script>
+        /* 
+            Här kan jag skriva JavaScript-kod. I JS ser 
+            kommentarerna ut så här. (flera rader)
+        */
+        // Eller så här (en rad) -- behöver inte avslutas
+        /*
+            Script taggar kan du lägga var som helst i ditt
+            dokument. 
+        */
+    </script>
+    <script src="js/javascript.js"></script>
+</head> <!-- Här slutar head-taggen -->
+<body> <!-- Här börjar body-taggen -->
+
+    <p style="background-color: red;">
+        Lorem Ipsum <span style="color: green;">Doloris</span> et Amis
+    </p>
+
+    <h1>Lektion 2 - Grunderna i HTML</h1>
+    <h2>Rubrik h2</h2>
+    <h3>Rubrik h3</h3>
+    <h4>Rubrik h4</h4>
+    <h5>Rubrik h5</h5>
+    <h6>Rubrik h6</h6>
+    <p>
+        Rubriker används för att strukturera innehåll. Innehållet
+        delas upp i olika delar. Tänk hur en bok är strukturerad.<br>
+    </p>
+    <p>
+        h1 - är bokens titel<br>
+        h2 - är ett kapitel<br>
+        h3 - är en sektion i ett kapitel<br>
+        osv<br>
+    </p>
+    <p>
+        - Du får "syntaktiskt" ha mer än en h1-tag. Men det är inte
+        rekommenderat - då påverkar hur sökmotorerna indexerar
+        sidan.<br>
+        - Undvik "hål" i rubrik hierarkin. Navigation kan påverkas 
+        och det kan påverka indexering.<br>
+        - Nästla (stoppa en hX-tag i en annan hX-tag)<br>
+        - Struktur, inte utseende. Om syftet "bara" är att få en text 
+        som är ser ut på ett speciellt sätt - använd t.ex. en 
+        &lt;span&gt;-tag istället.
+    </p>
+
+    <h2>Specialtecken</h2>
+
+    <p>
+        Tecken som är skyddade av HTML: &lt;, &gt;, &amp;, &apos; and &quot;<br>
+
+        Andra som kan vara kul: &hearts;, &clubs;, &diam; and &spades;<br>
+
+        👍🏻
+    </p>
+
+    <p>
+
+        Lorem <strong>Ipsum</strong> Dolris sit <i>Amet</i>.
+
+    </p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
