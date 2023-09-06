@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML &amp; CSS: Images, Media and Lists</title>
+  </head>
+  <body>
+    <h1>HTML &amp; CSS: Images, Media and Lists</h1>
+
+    <h2>Bilder</h2>
+
+    <p>
+      <img src="img/photo.jpeg" alt="Martin håller en gummianka" />
+    </p>
+    <p>
+      <figure>
+        <img
+          src="img/photo.jpeg"
+          alt="Martin med sin gummianka igen"
+          width="100"
+          height="20"
+        />
+        <figcaption>Bildrubrik</figcaption>
+      </figure>
+    </p>
+
+    <h2>Media</h2>
+
+    <h3>Video</h3>
+
+    <video controls width="200">
+      <source src="video/video.mp4" type="video/mp4" />
+      <!--
+        <source src="video/video.wepm" type="video/webm">
+        -->
+      <p>Din webbläsare har inte stöd för videoklippet. 😪</p>
+    </video>
+
+    <h3>Audio</h3>
+
+    <audio controls>
+      <source src="audio/audio.mp3" type="audio/mp3" />
+      <p>Din webbläsare har inte stöd för detta ljudklippet. 😪</p>
+    </audio>
+
+    <h3>Media objekt</h3>
+    <object
+      data="data/02 - HTML och CSS.pdf"
+      type="application/pdf"
+      width="500"
+      height="500"
+    >
+      <p>Din webbläsare stöder inte objekt. 😪</p>
+    </object>
+
+    <h3>YouTube</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/c74kMCOmP80?si=uAmNv1Byy114FhHc"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <h2>Listor</h2>
+
+    <h3>Sorterade listor</h3>
+
+    <ol>
+      <!-- start="100" reversed type="I" -->
+      <!-- ordered list -->
+      <li>Första</li>
+      <!-- list item -->
+      <li>Andra</li>
+      <li>Tredje</li>
+    </ol>
+
+    <h3>Osorterad lista</h3>
+    <ul>
+      <!-- unordered list -->
+      <li>Ett</li>
+      <li>Två</li>
+      <li>
+        <ul>
+          <li>Tre ett</li>
+          <li>Tre två</li>
+          <li><img src="img/photo.jpeg" width="50" alt="Gummianka" /></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Beskrivande listor</h3>
+
+    <dl>
+      <!-- description list -->
+      <dt><strong>Fråga 1 (Nyckel)</strong></dt>
+      <!-- description term -->
+      <dd><i>Svar till fråga 1 (Värdet)</i></dd>
+      <!-- description details -->
+      <dt>Fråga 2</dt>
+      <dd>Denna har ett annat svar</dd>
+    </dl>
+  </body>
+</html>

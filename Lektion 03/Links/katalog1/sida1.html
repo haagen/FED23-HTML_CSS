@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sida 1</h1>
+    <!-- Relativ länk till index.html i root:en ( / ) på webbsidan -->
+    <a href="/index.html">Index</a><br />
+    <!-- Relativ länk till index.html i förälder mappen ( ../ ) till mappen som denna filen ligger i -->
+    <a href="../index.html">Index</a><br />
+    <!-- Relativ länk till sida2.html som finns i katalogen katalog2 i root:en på webbsidan -->
+    <a href="/katalog2/sida2.html">Sida 2</a><br />
+    <!-- Relativ länk till sida2.html som finns i en "syskon" (../katalog2/)  mapp -->
+    <a href="../katalog2/sida2.html">Sida 2</a><br />
+    <!-- Relativ länk till root:en av webbsidan - index.html kommer att användas -->
+    <a href="/">Home</a>
+  </body>
+</html>

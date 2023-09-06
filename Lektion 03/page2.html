@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML &amp; CSS: Box-modellen</title>
+  </head>
+  <body>
+    <h1>HTML &amp; CSS: Box-modellen</h1>
+    <div style="background-color: lightcoral">
+      <p style="margin: 0">Detta är en "box".</p>
+    </div>
+    <div
+      style="
+        background-color: lightcyan;
+        padding: 50px;
+        /*
+        margin-left: 50px;
+        margin-right: 50px;
+        */
+        margin: 0 50px 0 50px;
+      "
+    >
+      <p>Detta är en annan "box".</p>
+    </div>
+    <div
+      style="
+        background-color: lightcyan;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        height: 200px;
+        width: 200px;
+        margin: 10px auto;
+      "
+    >
+      <div
+        style="
+          background-color: lightseagreen;
+          width: 50px;
+          height: 100%;
+          display: inline-block;
+        "
+      ></div>
+      <div
+        style="
+          background-color: lightpink;
+          width: 100px;
+          height: 100%;
+          display: inline-block;
+        "
+      ></div>
+    </div>
+
+    <div
+      style="
+        background-color: lightcyan;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        height: 200px;
+        width: 80%;
+        margin: 10px auto;
+      "
+    >
+      <div
+        style="
+          background-color: lightpink;
+          width: 25%;
+          height: 100%;
+          float: left;
+        "
+      ></div>
+      <div
+        style="
+          background-color: lightseagreen;
+          width: 75%;
+          padding: 0px;
+          box-sizing: border-box;
+          height: 100%;
+          float: right;
+        "
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+    </div>
+  </body>
+</html>
