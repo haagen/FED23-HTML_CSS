@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML &amp; CSS: Tabeller och Formulär</title>
+  </head>
+  <body>
+    <h1>HTML &amp; CSS: Tabeller och Formulär</h1>
+
+    <h2>Tabeller</h2>
+
+    <table border="1">
+      <caption>
+        Detta är en exempel tabell
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Huvud 1</th>
+          <th>Huvud 2</th>
+          <th>Huvud 3</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Rad 2 / Kolumn 1</td>
+        <td>Rad 2 / Kolumn 2</td>
+        <td>Rad 2 / Kolumn 3</td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="background-color: lightsalmon">
+          Rad 3 / Kolumn 1<br />
+          Täcka två kolumner
+        </td>
+        <!--
+                <td> Rad 3 / Kolumn 2 - täcks av Rad 3 / Kolumn 1 p.g.a. colspan 
+            -->
+        <td>Rad 3 / Kolumn 3</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2" style="background-color: lightseagreen">
+          Rad 4 / Kolumn 1<br />Täcker två rader
+        </td>
+        <td>Rad 4 / Kolumn 2</td>
+        <td>Rad 4 / Kolumn 3</td>
+      </tr>
+      <tr>
+        <!--
+
+            -->
+        <td>Rad 5 / Kolumn 2</td>
+        <td>Rad 5 / Kolumn 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Fot 1</td>
+            <td>Fot 2</td>
+            <td>Fot 3</td>
+        </tr>
+    </tfoot>
+    </table>
+  </body>
+</html>
