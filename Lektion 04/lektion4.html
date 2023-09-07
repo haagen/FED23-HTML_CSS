@@ -63,5 +63,67 @@
         </tr>
     </tfoot>
     </table>
+
+    <h2>Formulär</h2>
+    <form action="https://google.com/search" method="">
+      <legend>Här är mitt formulär</legend>
+<!-- 
+
+  style=""
+  border: 5px dotted lightseagreen 
+  border-bottom: 0; border-right: 0; border-left: 0; border-top: 5px dotted lightseagreen
+-->
+      <fieldset > 
+        <legend>Min formgrupp</legend>
+        <label for="cityOfBirth">I vilken stad föddes du?</label>
+        <input type="text" id="cityOfBirth" name="cityOfBirth" value="" placeholder="City of birth">
+        <br>
+        <label for="passwordTest">Skriv ditt lösenord</label>
+        <input type="password" id="passwordTest" name="passwordTest" value="password">
+        <br>
+        <textarea id="signatur" name="emailSignature" rows="10"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Formelemet för val</legend>
+        <input type="checkbox" name="AcceptTerms" id="AcceptTerms"> 
+        <label for="AcceptTerms">Jag accepterar allt!</label>
+        <input type="checkbox" name="Newsletter" id="Newsletter" checked="checked"> 
+        <label for="Newsletter">Jag vill prenumerera på nyhetsbrevet</label>
+<p>Välj din favvo färg!</p>
+
+        <input type="radio" value="red" id="redChoice" name="color">
+        <label for="redChoice">Röd</label>
+        <input type="radio" value="green" id="greenChoice" name="color">
+        <label for="greenChoice">Grön</label>
+        <input type="radio" value="blue" id="blueChoice" name="color">
+        <label for="blueChoice">Blå</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Rullgardin</legend>
+        <select name="country" id="country">
+          <option value="se">Sverige</option>
+          <optgroup label="Övriga världen">
+            <option value="dk">Danmark</option>
+            <option value="no">Norge</option>
+            <option value="fi">Finland</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Knapp</legend>
+        <input type="button" value="Tryck inte här!">
+        <input type="submit" value="Men tryck här!">
+        <button>
+          <h3>Rubrik</h3>
+          <p>Hello Knapp!</p>
+        </button>
+      </fieldset>
+<input type="text" name="q">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    </form>
   </body>
 </html>
