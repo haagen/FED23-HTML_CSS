@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML &amp; CSS: Introduktion till CSS</title>
+    <!-- Här länkar vi in en extern css -->
+    <link href="style.css" rel="stylesheet" />
+    <style>
+      /*
+            Intern CSS - finns bara i denna filen.
+        */
+
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inbäddad / Inline CSS -->
+    <h1 style="font-size: 20px">HTML &amp; CSS: Introduktion till CSS</h1>
+
+    <p>
+      Detta är en helt vanlig text. Den här texten kan vi styla med element i
+      texten, t.ex. <em>&lt;em&gt;em&lt;/em&gt;</em>. En klass kan ges till
+      flera element, även av olika tagg-typer. T.ex.
+      <i class="bold">kan bli kursiv</i>. Det går också att ge ett element fler
+      <i class="bold green">klasser</i>.
+    </p>
+
+    <div id="mittBlock" class="spacer">Min blå ruta!</div>
+
+    <div class="spacer" id="parent">
+      <!-- div "parent" är en förälder till p taggarna nedan -->
+      <!--
+            p - taggarna är barn till diven "paren"
+            p - taggarna är syskon med varrandra 
+        -->
+      <p id="barn1" class="syskon">
+        Min första paragraf. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Omnis alias culpa dolor laborum? Fugit quo eveniet officia
+        reiciendis voluptates eius ex qui dolorem non. Sit.
+      </p>
+      <p id="barn2" class="syskon">
+        Min andra paragraf. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Officiis ducimus magni cupiditate omnis praesentium labore
+        blanditiis distinctio, natus in adipisci reprehenderit explicabo at!
+        Corporis, nam!
+      </p>
+    </div>
+
+    <div class="spacer">
+      <form>
+        <label for="textRuta1">Min Textruta</label>
+        <input type="text" id="textRuta1" />
+        <input type="submit" value="Skicka" />
+      </form>
+    </div>
+
+    <div class="spacer">
+      <h2>Länkar och Psudoklasser</h2>
+      <a href="#">Min länk utan klass, men med stil!</a>
+    </div>
+
+    <div class="spacer" id="psudoDiv">
+      <p>
+        Min första paragraf! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Est at molestiae atque nisi voluptas! A accusamus distinctio eos
+        soluta consequatur reiciendis ut architecto odit atque!
+      </p>
+      <p>
+        Min andra paragraf! Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Aliquid magnam repellat unde voluptatum, aspernatur quos eligendi
+        veritatis ut debitis, cumque quae mollitia, eos dicta minus.
+      </p>
+      <p>
+        Min tredje paragraf! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptatem totam consectetur, ea repellat, quidem magni ipsam sed
+        voluptate culpa suscipit ducimus exercitationem quisquam, dolor dolores.
+      </p>
+      <p>
+        Min fjärde paragraf! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Laudantium, iste dignissimos voluptatem incidunt aliquam quas
+        quidem, tempore ipsa, vitae neque magni minus animi. Quos, consectetur.
+      </p>
+    </div>
+
+    <div class="spacer">
+      <div id="box1" class="boxStyle">
+        <ul>
+          <li>Min lista</li>
+          <li>
+            Har flera nivåer:
+            <ul>
+              <li>Under punktlista</li>
+              <li>Med flera punkter punktlista</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="box2" class="boxStyle">&nbsp;</div>
+    </div>
+  </body>
+</html>

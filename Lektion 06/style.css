@@ -1,0 +1,123 @@
+/* 
+typselektor
+*/
+em {
+  color: darkblue;
+  font-weight: 600;
+}
+
+/*
+klass-selektor
+*/
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+}
+
+/*
+id-selektor
+*/
+#mittBlock {
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-weight: 800;
+  color: white;
+}
+
+.spacer {
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid lightseagreen;
+}
+
+/* 
+  barn-selektor 
+
+  p är ett (direkt) barn till div 
+*/
+div > p {
+  font-size: 10px;
+}
+/*
+ syskon-selektor
+
+p + p {
+  text-indent: 25px;
+}
+*/
+
+/*
+attribut-selektor
+*/
+input[type="text"] {
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+/*
+    Psudo-klasser för länkar
+*/
+a:link {
+  color: seagreen;
+  font-weight: 900;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover {
+  color: lightseagreen;
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:active {
+  color: salmon;
+  text-decoration: none;
+}
+
+/*
+    Psudo-klasser för position
+
+    När p är det första barnet i ett element
+*/
+#psudoDiv > p:first-child {
+  font-style: italic;
+}
+
+#psudoDiv > p:last-child {
+  font-size: 8px;
+}
+
+#psudoDiv > p:nth-child(2) {
+  padding: 20px;
+}
+
+/*
+    Relativa enheter
+*/
+
+li {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.1em;
+}
+
+.boxStyle {
+  background-color: lightsalmon;
+  width: 50vw; /* = 50% av visningsytan */
+  float: left;
+}
+
+#box2 {
+  height: 2rem; /* 2 * 16px = 32 */
+}
+
+/*
+
+1 rem = font-size hos root-elementet (html) 
+
+*/
