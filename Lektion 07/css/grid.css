@@ -1,0 +1,38 @@
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 0.625rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: lightcoral;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+main {
+  background-color: lightcyan;
+}
+
+footer {
+  background-color: lightgreen;
+  grid-column: 1/3;
+}
+
+aside {
+  background-color: lightseagreen;
+
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  /*
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  */
+}

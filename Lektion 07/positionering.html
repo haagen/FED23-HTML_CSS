@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML &amp; CSS: Box-modellen forts.</title>
+    <style>
+      #static {
+        background-color: lightblue;
+        width: 300px;
+      }
+
+      #relative {
+        background-color: lightcoral;
+        width: 200px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+      }
+
+      #absolute {
+        background-color: lightgreen;
+        position: absolute;
+        top: 130px;
+        left: 30px;
+        width: 200px;
+        z-index: 10;
+      }
+
+      #fixed {
+        position: fixed;
+        background-color: lightseagreen;
+        width: 200px;
+        top: 150px;
+        left: 45px;
+      }
+
+      #sticky {
+        position: sticky;
+        background-color: lightslategray;
+        width: 200px;
+        top: 100px;
+        left: 45px;
+        z-index: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML &amp; CSS: Box-modellen forts.</h1>
+    <div id="static">
+      Detta är en box som är "static".
+      <div id="relative">Denna boxen är "relative".</div>
+      <div id="absolute">Denna boxen är "absolute".</div>
+    </div>
+
+    <div id="fixed">Denna box är "fixed".</div>
+    <div id="sticky">Denna boxen är "sticky".</div>
+
+    <div style="height: 1000px">&nbsp;</div>
+  </body>
+</html>
