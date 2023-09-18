@@ -1,0 +1,53 @@
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+article {
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+article > img {
+    width: 40%;
+    float: left;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    color: red;
+}
+/*
+article p:nth-of-type(1)
+p:nth-child(3)
+*/
+
+article p:first-of-type {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.highlight {
+    color: lightseagreen;
+    font-style: italic;
+    font-weight: bold;
+}

@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#flexcontainer {
+    background-color: lightgray;
+    display: flex;
+
+    height: 200px;
+    width: 80vw;
+
+    margin: 0 auto;
+
+    /*
+      flex-start, flex-end, center, space-between,
+      space-around, space-evenly, stretch
+    */
+    justify-content: space-evenly;
+    /*
+      flex-start, flex-end, center, space-between,
+      space-around, space-evenly, stretch
+    */
+    align-items: center;    
+
+    /* nowrap, wrap */
+    flex-wrap: wrap;
+
+    
+    /*
+    flex-direction: column-reverse;
+    */
+}
+
+#flex1 {
+    background-color: lightseagreen;
+    /* order: 2; */
+    flex-basis: 62vw;
+    /* flex-grow: 1; */
+}
+
+#flex2 {
+    background-color: lightsalmon;
+    /* order: 3; */
+    flex-basis: 20vw;
+    /* flex-grow: 10; */
+}
+
+#flex3 {
+    background-color: lightblue;
+    /* order: 1; */
+    flex-basis: 20vw;
+    /* flex-grow: 1; */
+}

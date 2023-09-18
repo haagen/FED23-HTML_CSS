@@ -1,0 +1,15 @@
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+article {
+    float: left;
+    width: 200px;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+}
+
+article > img {
+    width: 100%;
+}
