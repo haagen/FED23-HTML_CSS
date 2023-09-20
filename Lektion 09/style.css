@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap"); */
+
+@font-face {
+  font-family: "Fuggles";
+  src: local("Fuggles"), url("Fuggles/Fuggles-Regular.ttf");
+}
+
+.mysteryColor1 {
+  background-color: #ffa07a; /* lightsalmon */
+}
+
+.mysteryColor2 {
+  background-color: rgb(144, 238, 144); /* lightgreen */
+}
+
+.mysteryColor3 {
+  background-color: hsl(234, 56%, 78%);
+}
+
+#childBox1,
+#childBox2 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+#childBox1 {
+  background-color: hsl(234, 56%, 78%);
+}
+
+#childBox2 {
+  background-color: rgb(144, 238, 144);
+  /* background-color: #ffa07a; */
+  top: -50px;
+  opacity: 0.5;
+}
+
+#backgroundDiv {
+  background-color: lightseagreen;
+  width: 500px;
+  height: 500px;
+
+  /* width: 100vw;
+  height: 100vh; */
+  background-image: url("jeep.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* background-attachment: fixed; */
+}
+
+.spacer {
+  /* height: 500px; */
+}
+
+.textFormat {
+  font-family: "Fuggles", cursive;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+h2 {
+  /* text-transform: capitalize; */
+}
+
+li {
+  /* list-style: upper-alpha; */
+  /* list-style-image: url("icon.jpg"); */
+}
+
+li {
+  /* background-image: url('icon.jpg');
+    background-repeat: no-repeat;
+    background-position: left top; */
+  background: url("icon.jpg") no-repeat left top;
+  list-style: none;
+  padding: 5px 0px 3px 40px;
+  margin: 0;
+}
