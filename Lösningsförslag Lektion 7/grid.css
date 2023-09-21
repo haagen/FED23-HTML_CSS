@@ -1,0 +1,42 @@
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 7rem auto 7rem; /* 7rem = 16 * 7 = 112px */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    background-color: lightseagreen;
+    padding: 0.625rem; /* 0.625 * 16 = 10px */
+}
+
+nav {
+    background-color: lightsalmon;
+    grid-column: 2 / 4;
+    padding: 0.625rem;
+    text-align: right;
+}
+
+section {
+    padding: 0.625rem;
+}
+
+#section1 {
+    background-color: lightgreen;;
+}
+
+#section2 {
+    background-color: lightgray;
+}
+
+#section3 {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightgoldenrodyellow;
+    grid-column: 1 / 4;
+    padding: 0.625rem;
+}
