@@ -1,0 +1,75 @@
+/* :root {
+    --bgColor: lightseagreen;
+    --fntColor: lightsalmon;
+} */
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: var(--bgColor, black);
+    color: var(--fntColor, white);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    font-weight: 500;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#col2 {
+    width: 15rem;
+}
+
+a {
+    color: var(--fntColor, white);;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--fntColor, white);
+}
+
+.twitterList a:hover {
+    color: #26a7de;
+}
+
+.linkedInList a:hover {
+    color: #0072b1;
+}
+
+.mastoList a:hover {
+    color: #4c19bb;
+}
+
+.facebookList a:hover {
+    color: #3b5998;
+}
+
+.youtubeList a:hover {
+    color: #FF0000;
+}
+
+@media screen and (max-width: 700px) {
+    
+    footer {
+        flex-direction: column;
+    }
+
+    footer > div {
+        padding: 1rem;
+    }
+
+}
